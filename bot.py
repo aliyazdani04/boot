@@ -47,7 +47,7 @@ def alert(guid,user,link=False):
 	coun = int(alerts.count(guid))
 
 	haslink = ""
-	if link : haslink = "گزاشتن لینک در گروه ممنوع میباشد .\n\n"
+	if link : haslink = "گزاشتن لینک در گروه ممنوع میباشد .\n"
 
 	if coun == 1:
 		bot.sendMessage(target, "💢 اخطار [ @"+user+" ] \n"+haslink+" شما (1/3) اخطار دریافت کرده اید .")
